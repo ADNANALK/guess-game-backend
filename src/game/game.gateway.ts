@@ -96,12 +96,4 @@ export class GameGateway implements OnGatewayInit, OnGatewayConnection, OnGatewa
       players: this.gameService.getPlayers(),
     };
   }
-
-  // emitMultiplierUpdate(): void {
-  //   this.gameService
-  //     .getCurrentMultiplierObservable()
-  //     .subscribe((multiplier) => {
-  //       this.server.emit('multiplierUpdate', multiplier); // Emit multiplier updates to the client
-  //     });
-  // }
 }
